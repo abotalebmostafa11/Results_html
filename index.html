@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #2d2d2d;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+        }
+
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .image-container {
+            flex-basis: calc(25% - 40px);
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+            transition: .3s;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+
+        .image-container h2 {
+            margin-top: 10px;
+            color: #2d2d2d;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.03);
+        }
+
+        .download-button {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+
+        .language-buttons {
+            margin-top: 20px;
+        }
+
+        .language-buttons button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            background-color: #ddd;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        .language-buttons button:hover {
+            background-color: #bbb;
+        }
+
+        .active {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>POSSIBILITIES OF PARALLELISM IN IDENTIFYING A QUASILINEAR RECURRENT EQUATION</h1>
+    <h1>ВОЗМОЖНОСТИ ПАРАЛЛЕЛИЗМА ПРИ ИДЕНТИФИКАЦИИ КВАЗИЛИНЕЙНОГО РЕКУРРЕНТНОГО УРАВНЕНИЯ</h1>
+
+
+    <div class="image-row">
+        <div class="image-container">
+            <h3>LSTM Model Architecture</h3>
+            <h3>Архитектура модели LSTM</h3>
+            <img src="best_model.h5LSTM.png" alt="Model Architecture">
+            <p>The LSTM model implemented has a single layer with 100 LSTM units, trained for 500 epochs with a batch size of 10. The model is designed to use the last 3 time steps (look_back) and 3-step sliding windows (window_size) to forecast the next time step in a sequence, making it suitable for time-series data prediction tasks.</p>
+            <p>Реализованная модель LSTM имеет один слой со 100 единицами LSTM, обученными для 500 эпох с размером пакета 10. Модель предназначена для использования последних 3 временных шагов (look_back) и 3-шаговых скользящих окон (window_size) для прогнозирования следующий временной шаг в последовательности, что делает его пригодным для задач прогнозирования данных временных рядов.</p>
+            <a class="download-button" href="best_model.h5LSTM.png" download>Download</a>
+        </body>
+        </div>
+        <div class="image-container">
+            <h3>Future Predictions using LSTM</h3>
+            <h3>Прогнозы на будущее с использованием LSTM</h3>
+            <img src="Future_PredictionsLSTM.png" alt="Model Architecture">
+            <p>Forecasting for 14 days in the future</p>
+            <p>Прогноз на 14 дней вперед.</p>
+            <a class="download-button" href="Future_PredictionsLSTM.png" download>Download</a>
+        </body>
+        </div>
+        <div class="image-container">
+            <h3>Model loss using LSTM</h3>
+            <h3>Потеря модели с использованием LSTM</h3>
+            <img src="model_lossLSTM.png" alt="Model Architecture">
+            <p>The plot for "Model loss using LSTM" would typically be a line graph that shows how the loss of the LSTM model changes over each epoch (iteration) of the training process. On the x-axis, you would have the number of epochs, and on the y-axis, you would have the value of the loss function.</p>
+            <p>График для «Потери модели с использованием LSTM» обычно представляет собой линейный график, показывающий, как потери модели LSTM меняются в течение каждой эпохи (итерации) процесса обучения. На оси X у вас будет количество эпох, а на оси Y у вас будет значение функции потерь.</p>
+            <a class="download-button" href="model_lossLSTM.png" download>Download</a>
+        </body>
+        </div>
+        <div class="image-container">
+            <h3>Testing Data and prediction using LSTM </h3>
+            <h3>Тестирование данных и прогнозирование с использованием LSTM</h3>
+            <img src="test_vs_predictionLSTM.png" alt="Model Architecture">
+            <p>A plot titled "Testing Data using LSTM" typically displays how well a trained LSTM model is performing on unseen, or testing, data. In the context of time series forecasting or any other prediction task</p>
+            <p>График под названием «Тестирование данных с использованием LSTM» обычно показывает, насколько хорошо обученная модель LSTM работает с невидимыми или тестируемыми данными. В контексте прогнозирования временных рядов или любой другой задачи прогнозирования</p>
+            <a class="download-button" href="test_vs_predictionLSTM.png" download>Download</a>
+        </body>
+        </div>
+
+        <div class="image-container">
+            <h3>LSTMs Model Architecture</h3>
+            <h3>Архитектура модели LSTMs</h3>
+            <img src="best_modelLSTMs.h5.png" alt="Model Architecture">
+            <p>Hyperparameters are pre-training settings, including batch size (number of samples processed together), epochs (total passes through the dataset), and units (output size of LSTM layer). These values directly influence the model's performance.</p>
+            <p>Гиперпараметры — это настройки перед обучением, включая размер партии (количество выборок, обработанных вместе), эпохи (общее количество проходов через набор данных) и единицы (выходной размер слоя LSTM). Эти значения напрямую влияют на производительность модели.</p>
+            <a class="download-button" href="best_modelLSTMs.h5.png" download>Download</a>
+        </body>
+        </div>
+        <div class="image-container">
+            <h3>Future Predictions using LSTMs</h3>
+            <h3>Прогнозы на будущее с использованием LSTMs</h3>
+            <img src="Future_PredictionsLSTMs.png" alt="Future Predictions using LSTMs">
+            <p>Forecasting for 14 days in the future</p>
+            <p>Прогноз на 14 дней вперед</p>
+            <a class="download-button" href="Future_PredictionsLSTMs.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Model loss using LSTMs</h3>
+            <h3>Потеря модели с использованием LSTMs</h3>
+            <img src="model_lossLSTMs.png" alt="Model loss using LSTMs">
+            <p>The plot for "Model loss using LSTMs" would typically be a line graph that shows how the loss of the LSTMs model changes over each epoch (iteration) of the training process. On the x-axis, you would have the number of epochs, and on the y-axis, you would have the value of the loss function.</p>
+            <p>График для «Потери модели с использованием LSTMs» обычно представляет собой линейный график, показывающий, как потери модели LSTMs меняются в течение каждой эпохи (итерации) процесса обучения. На оси X у вас будет количество эпох, а на оси Y у вас будет значение функции потерь.</p>
+            <a class="download-button" href="model_lossLSTMs.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Testing Data and prediction using LSTMs </h3>
+            <h3>Тестирование данных и прогнозирование с использованием LSTMs</h3>            <img src="Testing_DataLSTMs.png" alt="Testing Data using LSTMs">
+            <p>A plot titled "Testing Data using LSTMs" typically displays how well a trained LSTMs model is performing on unseen, or testing, data. In the context of time series forecasting or any other prediction task</p>
+            <p>График под названием «Тестирование данных с использованием LSTM» обычно показывает, насколько хорошо обученная модель LSTM работает с невидимыми или тестируемыми данными. В контексте прогнозирования временных рядов или любой другой задачи прогнозирования</p>
+            <a class="download-button" href="Testing_DataLSTMs.png" download>Download</a>
+        </div>     
+        <div class="image-container">
+            <h3>BDLSTM Model Architecture</h3>
+            <h3>Архитектура модели BDLSTM</h3>
+            <img src="best_model.h5BDLSTM.png" alt="Model Architecture">
+            <p>The updated parameters are set for a Bidirectional LSTM (BiLSTM) model. It includes "batch_size" of 10, "epochs" of 200 for training cycles, "look_back" of 20 for input sequence length, "units" of 200 for LSTM output dimension, and "window_size" of 10 for input feature size. In addition, the parameter "bilstm" is set to true, enabling the use of Bidirectional LSTM. The mode for merging the forward and backward LSTM outputs is set to "concat" by the "bilstm_mode" parameter.</p>
+            <p>Обновленные параметры установлены для двунаправленной модели LSTM (BiLSTM). Он включает в себя «batch_size» 10, «эпохи» 200 для обучающих циклов, «look_back» 20 для длины входной последовательности, «единицы» 200 для выходного размера LSTM и «window_size» 10 для размера входной функции. Кроме того, для параметра «bilstm» установлено значение true, что позволяет использовать двунаправленный LSTM. Режим объединения прямых и обратных выходных данных LSTM устанавливается на «concat» параметром «bilstm_mode».</p>
+            <a class="download-button" href="best_model.h5BDLSTM.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Future Predictions using BDLSTM</h3>
+            <h3>Прогнозы на будущее с использованием BDLSTM</h3>
+            <img src="Future_PredictionsBDLSTM.png" alt="Future Predictions using BDLSTM">
+            <p>Forecasting for 14 days in the future</p>
+            <p>Прогноз на 14 дней вперед</p>
+            <a class="download-button" href="Future_PredictionsBDLSTM.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Model loss using BDLSTM</h3>
+            <h3>Потеря модели с использованием BDLSTM</h3>
+            <img src="model_lossBDLSTM.png" alt="Model loss using BDLSTM">
+            <p>The plot for "Model loss using BiLSTMs" would be a line graph illustrating the change in loss of the BiLSTM model across each epoch of the training process. The x-axis signifies the number of epochs, while the y-axis represents the value of the loss function. This helps track how well the Bidirectional LSTM is learning from the data over time.</p>
+            <p>График для «Потери модели с использованием BiLSTM» будет представлять собой линейный график, иллюстрирующий изменение потерь модели BiLSTM в каждую эпоху процесса обучения. Ось x обозначает количество эпох, а ось y представляет значение функции потерь. Это помогает отслеживать, насколько хорошо двунаправленный LSTM учится на данных с течением времени.</p>
+            <a class="download-button" href="model_lossBDLSTM.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Testing Data and prediction using BDLSTM </h3>
+            <h3>Тестирование данных и прогнозирование с использованием BDLSTM</h3> 
+            <img src="Testing_DataBDLSTM.png" alt="Testing Data using BDLSTM">
+            <p>A plot titled "Testing Data using BiLSTMs" typically illustrates how effectively a trained BiLSTMs model is performing on unseen or testing data. In the context of time series forecasting or any other prediction task, it shows the model's predictions over time compared to the actual values, helping assess the Bidirectional LSTM's predictive capabilities.</p>
+            <p>График под названием «Тестирование данных с использованием BiLSTM» обычно показывает, насколько эффективно обученная модель BiLSTM работает с невидимыми или тестируемыми данными. В контексте прогнозирования временных рядов или любой другой задачи прогнозирования он показывает прогнозы модели с течением времени по сравнению с фактическими значениями, помогая оценить возможности прогнозирования двунаправленного LSTM.</p>
+            <a class="download-button" href="Testing_DataBDLSTM.png" download>Download</a>
+        </div>
+
+
+
+
+
+        <div class="image-container">
+            <h3>GRU Model Architecture</h3>
+            <h3>Архитектура модели GRU</h3>
+            <img src="best_model.h5GRU.png" alt="Model Architecture">
+            <p>The number of epochs is a hyperparameter that defines the number of times the learning algorithm will work through the entire training dataset. You've set it to 400, indicating that your GRU model will iterate through your training data 400 times.</p>
+            <p>Количество эпох — это гиперпараметр, который определяет, сколько раз алгоритм обучения будет работать через весь набор обучающих данных. Вы установили его на 400, указывая, что ваша модель GRU будет повторять ваши обучающие данные 400 раз.</p>
+            <a class="download-button" href="best_model.h5GRU.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Future Predictions using GRU</h3>
+            <h3>Прогнозы на будущее с использованием GRU</h3>
+            <img src="Future_PredictionsGRU.png" alt="Future Predictions using BDLSTM">
+            <p>Forecasting for 14 days in the future</p>
+            <p>Прогноз на 14 дней вперед</p>
+            <a class="download-button" href="Future_PredictionsGRU.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Model loss using GRU</h3>
+            <h3>Потеря модели с использованием GRU</h3>
+            <img src="model_lossGRU.png" alt="Model loss using BDLSTM">
+            <p>The plot for "Model loss using GRUs" would be a line graph illustrating the change in loss of the GRU model across each epoch of the training process. The x-axis signifies the number of epochs, while the y-axis represents the value of the loss function. This helps track how well the Gated Recurrent Unit is learning from the data over time.</p>
+            <p>График для «Потери модели с использованием ГРУ» будет представлять собой линейный график, иллюстрирующий изменение потерь модели ГРУ в каждую эпоху процесса обучения. Ось x обозначает количество эпох, а ось y представляет значение функции потерь. Это помогает отслеживать, насколько хорошо Gated Recurrent Unit учится на данных с течением времени.</p>
+            <a class="download-button" href="model_lossGRU.png" download>Download</a>
+        </div>
+        <div class="image-container">
+            <h3>Testing Data and prediction using GRU </h3>
+            <h3>Тестирование данных и прогнозирование с использованием GRU</h3> 
+            <img src="Testing_DataGRU.png" alt="Testing Data using BDLSTM">
+            <p>A plot titled "Testing Data using GRUs" typically illustrates how effectively a trained GRU model is performing on unseen or testing data. In the context of time series forecasting or any other prediction task, it shows the model's predictions over time compared to the actual values, helping assess the Gated Recurrent Unit's predictive capabilities.</p>
+            <p>График под названием «Тестирование данных с использованием GRU» обычно показывает, насколько эффективно обученная модель GRU работает с невидимыми или тестируемыми данными. В контексте прогнозирования временных рядов или любой другой задачи прогнозирования он показывает прогнозы модели с течением времени по сравнению с фактическими значениями, помогая оценить прогностические возможности Gated Recurrent Unit.</p>
+            <a class="download-button" href="Testing_DataGRU.png" download>Download</a>
+        </div>
+    </div>
+
+    </body>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            color: #444;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-transform: uppercase;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        </style>
+        
+        <table>
+            <caption style="font-size: 1.5em; color: #333; margin-bottom: 15px;">Hyperparameters using Gridsearchcv algorithm for machine learning models</caption>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Batch Size</th>
+                    <th>Epochs</th>
+                    <th>Look_Back</th>
+                    <th>Units</th>
+                    <th>Window_Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>LSTM</td>
+                    <td>10</td>
+                    <td>500</td>
+                    <td>3</td>
+                    <td>100</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>LSTMs</td>
+                    <td>5</td>
+                    <td>200</td>
+                    <td>3</td>
+                    <td>300</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>BDLSTM</td>
+                    <td>10</td>
+                    <td>200</td>
+                    <td>20</td>
+                    <td>200</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>GRU</td>
+                    <td>10</td>
+                    <td>400</td>
+                    <td>3</td>
+                    <td>150</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                font-family: Arial, sans-serif;
+                color: #444;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+                padding: 12px 15px;
+            }
+            th {
+                background-color: #4CAF50;
+                color: white;
+                text-transform: uppercase;
+            }
+            tbody tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            </style>
+            
+            <table>
+                <caption style="font-size: 1.5em; color: #333; margin-bottom: 15px;">Error analysis of various optimized machine learning and GLDM models</caption>
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>MSE</th>
+                        <th>RMSE</th>
+                        <th>MAE</th>
+                        <th>R^2</th>
+                        <th>RRMSE</th>
+                        <th>r</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LSTM</td>
+                        <td>517.49</td>
+                        <td>22.75</td>
+                        <td>9.98</td>
+                        <td>1.00</td>
+                        <td>4.77</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>LSTMs</td>
+                        <td>1873.87</td>
+                        <td>43.29</td>
+                        <td>16.73</td>
+                        <td>0.99</td>
+                        <td>6.58</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>BDLSTM</td>
+                        <td>150.81</td>
+                        <td>12.28</td>
+                        <td>7.23</td>
+                        <td>1.00</td>
+                        <td>3.50</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>GRU</td>
+                        <td>84.80</td>
+                        <td>9.21</td>
+                        <td>3.52</td>
+                        <td>1.00</td>
+                        <td>3.03</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr style="font-weight:bold;">
+                        <td>GLDM</td>
+                        <td>34.04</td>
+                        <td>5.83</td>
+                        <td>0.985</td>
+                        <td>1.00</td>
+                        <td>0.01</td>
+                        <td>1.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <!DOCTYPE html>
+<html>
+<head>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+<script>
+    // Your data
+    var data = [
+      {
+        name: 'MSE',
+        x: ['LSTM', 'LSTMs', 'BDLSTM', 'GRU', 'GLDM'],
+        y: [517.49, 1873.87, 150.81, 84.80, 34.04],
+        type: 'bar'
+      },
+      {
+        name: 'RMSE',
+        x: ['LSTM', 'LSTMs', 'BDLSTM', 'GRU', 'GLDM'],
+        y: [22.75, 43.29, 12.28, 9.21, 5.83],
+        type: 'bar'
+      },
+      {
+        name: 'MAE',
+        x: ['LSTM', 'LSTMs', 'BDLSTM', 'GRU', 'GLDM'],
+        y: [9.98, 16.73, 7.23, 3.52, 0.985],
+        type: 'bar'
+      },
+      {
+        name: 'R^2',
+        x: ['LSTM', 'LSTMs', 'BDLSTM', 'GRU', 'GLDM'],
+        y: [1.00, 0.99, 1.00, 1.00, 1.00],
+        type: 'bar'
+      },
+      {
+        name: 'RRMSE',
+        x: ['LSTM', 'LSTMs', 'BDLSTM', 'GRU', 'GLDM'],
+        y: [4.77, 6.58, 3.50, 3.03, 0.01],
+        type: 'bar'
+      },
+      {
+        name: 'r',
+        x: ['LSTM', 'LSTMs', 'BDLSTM', 'GRU', 'GLDM'],
+        y: [1.00, 1.00, 1.00, 1.00, 1.00],
+        type: 'bar'
+      }
+    ];
+    
+    // Your layout settings
+    var layout = {
+      title: 'Error Analysis of Models',
+      barmode: 'group'
+    };
+
+    // Create the chart
+    Plotly.newPlot('myDiv', data, layout);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+            <table style="width:100%; border: 1px solid black;">
+                <caption>Анализ ошибок различных моделей машинного обучения и GLDM-модели</caption>
+                <tr style="background-color: #f2f2f2;">
+                  <th>Модель</th>
+                  <th>MSE</th> 
+                  <th>RMSE</th>
+                  <th>MAE</th>
+                  <th>R<sup>2</sup></th>
+                  <th>RRMSE</th>
+                  <th>r</th>
+                </tr>
+                <tr>
+                  <td>ARIMA</td>
+                  <td>5189410.3768</td>
+                  <td>2278.0277</td>
+                  <td>2211.0906</td>
+                  <td>0.7221</td>
+                  <td>5.6321</td>
+                  <td>0.8498</td>
+                </tr>
+                <tr style="background-color: #f2f2f2;">
+                  <td>BATS</td>
+                  <td>3206709.0596</td>
+                  <td>1790.7286</td>
+                  <td>1732.6412</td>
+                  <td>0.9047</td>
+                  <td>4.4273</td>
+                  <td>0.9512</td>
+                </tr>
+                <tr>
+                  <td>TBATS</td>
+                  <td>227.5844</td>
+                  <td>15.0859</td>
+                  <td>13.6875</td>
+                  <td>0.9182</td>
+                  <td>0.0463</td>
+                  <td>0.9582</td>
+                </tr>
+                <tr style="background-color: #f2f2f2;">
+                  <td>Holt</td>
+                  <td>372.1084</td>
+                  <td>19.2901</td>
+                  <td>17.6412</td>
+                  <td>0.865</td>
+                  <td>0.0593</td>
+                  <td>0.9301</td>
+                </tr>
+                <tr>
+                  <td>Hybrid classical models</td>
+                  <td>232.6415</td>
+                  <td>15.2526</td>
+                  <td>11.8957</td>
+                  <td>0.8345</td>
+                  <td>0.0469</td>
+                  <td>0.9135</td>
+                </tr>
+                <tr style="background-color: #f2f2f2;">
+                  <td>GLDM</td>
+                  <td><strong>34.04</strong></td>
+                  <td><strong>5.83</strong></td>
+                  <td><strong>0.985</strong></td>
+                  <td><strong>1</strong></td>
+                  <td><strong>0.01</strong></td>
+                  <td><strong>1</strong></td>
+                </tr>
+              </table>
+
+              <!DOCTYPE html>
+<html>
+<head>
+    <!-- Include Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+<div id="myDiv2"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+<script>
+    // Your data
+    var data = [
+      {
+        name: 'MSE',
+        x: ['ARIMA', 'BATS', 'TBATS', 'Holt', 'Hybrid classical models', 'GLDM'],
+        y: [5189410.3768, 3206709.0596, 227.5844, 372.1084, 232.6415, 34.04],
+        type: 'bar'
+      },
+      {
+        name: 'RMSE',
+        x: ['ARIMA', 'BATS', 'TBATS', 'Holt', 'Hybrid classical models', 'GLDM'],
+        y: [2278.0277, 1790.7286, 15.0859, 19.2901, 15.2526, 5.83],
+        type: 'bar'
+      },
+      {
+        name: 'MAE',
+        x: ['ARIMA', 'BATS', 'TBATS', 'Holt', 'Hybrid classical models', 'GLDM'],
+        y: [2211.0906, 1732.6412, 13.6875, 17.6412, 11.8957, 0.985],
+        type: 'bar'
+      },
+      {
+        name: 'R^2',
+        x: ['ARIMA', 'BATS', 'TBATS', 'Holt', 'Hybrid classical models', 'GLDM'],
+        y: [0.7221, 0.9047, 0.9182, 0.865, 0.8345, 1],
+        type: 'bar'
+      },
+      {
+        name: 'RRMSE',
+        x: ['ARIMA', 'BATS', 'TBATS', 'Holt', 'Hybrid classical models', 'GLDM'],
+        y: [5.6321, 4.4273, 0.0463, 0.0593, 0.0469, 0.01],
+        type: 'bar'
+      },
+      {
+        name: 'r',
+        x: ['ARIMA', 'BATS', 'TBATS', 'Holt', 'Hybrid classical models', 'GLDM'],
+        y: [0.8498, 0.9512, 0.9582, 0.9301, 0.9135, 1],
+        type: 'bar'
+      }
+    ];
+    
+    // Your layout settings
+    var layout = {
+      title: 'Error Analysis of Models',
+      barmode: 'group'
+    };
+
+    // Create the chart
+    Plotly.newPlot('myDiv2', data, layout);
+</script>
+
+</body>
+</html>
+
+
+              
+
+              
+
+
+              
+              
+
+    </html>
+    
